@@ -1,0 +1,26 @@
+<%- include('../partials/header.ejs')%>
+
+    <img class="background-img" src="https://xbox-store-checker.com/assets/upload/game/2019/02/optimize/9wzdncrfj3tj-background.jpg" alt="">
+
+    <ul class = "nav">
+      <h1>CrimeFlix</h1>
+        <li class = "nav-item">
+          <a class = "back" href = "/user">Back</a>
+        </li>
+    </ul>
+
+    <form class = "signInForm" action="/home" method="POST">
+      <h3>Sign In</h3>
+      <input class = "username" type="text" name="username" value="" placeholder="Username" required>
+      <br>
+      <input class = "password" type="password" name="password" placeholder="Password" required>
+      <br>
+      <br>
+      <input class = "submit" type="submit" name="submit" value="Sign In">
+
+    </form>
+
+
+
+
+<%- include('../partials/footer.ejs')%>

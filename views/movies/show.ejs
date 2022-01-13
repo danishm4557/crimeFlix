@@ -1,0 +1,81 @@
+<%- include('../partials/header.ejs')%>
+
+
+
+<img class = "background-img" src="https://xbox-store-checker.com/assets/upload/game/2019/02/optimize/9wzdncrfj3tj-background.jpg" alt="">
+<ul class = "nav">
+  <h2 class = "logo">CrimeFlix</h2>
+    <li class = "nav-item">
+      <a class = "nav-link active" href = "/home"><p class = "header-links">Home</p></a>
+    </li>
+    <li class = "nav-item">
+      <a class = "nav-link active" href = "/movies"><p class = "header-links">Movies</p></a>
+    </li>
+    <li class = "nav-item">
+      <a class = "nav-link active" href = "/shows"><p class = "header-links">TV Shows</p></a>
+    </li>
+    <li class = "nav-item">
+      <a class = "nav-link active" href = "/reviews"><p class = "header-links">All Reviews</p></a>
+    </li>
+    <li class = "nav-item">
+      <a class = "nav-link active" href = "/submitreview"><p class = "header-links">Submit Review</p></a>
+    </li>
+    <li class = "nav-item">
+      <a class = "nav-link active" href = "/user/signin"><p class = "header-links">@Username</p></a>
+    </li>
+</ul>
+
+<h3 class = "movieTitle"><%=movie.name%></h3>
+
+<div class="showPageImageDiv">
+  <img class = "card showPageCard" src="<%=movie.img%>" alt="image" width="75%">
+
+  <iframe class = "movieTrailer" max-width="700"
+  src="https://www.youtube.com/embed/tgbNymZ7vqY">
+  </iframe>
+</div>
+
+<div class="showPageLikesOutterShell">
+  <div class="showPageLikesInnerShell" style="width:<%=likedPercentage%>%">
+    <%=likedPercentage%>% liked this movie
+  </div>
+</div>
+
+<div class="likeAndBuyButtons">
+  <form class="" action="index.html" method="post">
+    <input class = "likeOrDislike" type="submit" name="like" value="Like">
+  </form>
+  <form class="" action="index.html" method="post">
+    <input class = "likeOrDislike" type="submit" name="" value="Dislike">
+  </form>
+</div>
+
+
+<div class="showPageSummaryAndReviews">
+<div class="showPageSummaryDiv">
+  <div class="">
+    <h3><u>Summary</u></h3>
+    <p><%=movie.summary%></p>
+  </div>
+</div>
+
+
+
+<div class="showPageReviewsDiv">
+  <h3><u>Reviews</u></h3>
+  <% for (let i = 0; i < movie.reviews.length; i++) { %>
+    <div class="reviews-card-body">
+       <p class="card-text" style="text-decoration:none"><%=movie.reviews[i]%></p>
+       <p>@username</p>
+       <hr>
+       <hr>
+       <p class="card-text" style="text-decoration:none"><%=movie.reviews[i]%></p>
+       <p>@username</p>
+    </div>
+  <% } %>
+</div>
+</div>
+<img class = "showPageBackground-img" src="https://xbox-store-checker.com/assets/upload/game/2019/02/optimize/9wzdncrfj3tj-background.jpg" alt="">
+
+
+<%- include('../partials/footer.ejs')%>

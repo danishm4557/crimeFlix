@@ -1,0 +1,371 @@
+
+body {
+  font-family: 'Fjalla One', sans-serif;
+  color: white;
+  letter-spacing: 3px;
+}
+.background-img {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  filter: blur(4px);
+  background-repeat: no-repeat;
+}
+.nav {
+  margin: 20px;
+  justify-content: space-between;
+}
+.header-links {
+  color: white;
+}
+.moviesOfTheDaySection {
+  text-align: center;
+  margin: auto;
+  margin-top: -5px;
+}
+
+.cards {
+  color: black;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  margin-top: 20px;
+}
+.card {
+  max-height: 600px;
+  max-width: 25vw;
+  padding: 10px;
+  overflow: scroll;
+  box-shadow: 5px 12px 12px 5px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  text-decoration: none;
+  text-decoration-line:
+}
+.card:hover {
+  box-shadow: 5px 12px 30px 5px rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+.secondBackground-img {
+  width: 100%;
+  height: 100vh;
+  filter: blur(40px);
+  position: relative;
+  top: 103px;
+  z-index: -1;
+}
+
+.latestMoviesSection {
+  background-color: rgb(50, 51, 54);
+  margin-top: -670px;
+  padding-bottom: 60px;
+  padding-top: 15px;
+  overflow-x: scroll;
+}
+.moviesCards {
+  color: black;
+  list-style: none;
+  width: 2000px;
+  text-align: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-top: 20px;
+
+}
+.movieCard {
+  height: 18.5vh;
+  width: 22vw;
+  box-shadow: 5px 12px 12px 5px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.section1 {
+  max-width: 550px;
+  margin: auto;
+  margin-top: 10vh;
+  text-align: center;
+}
+.section2 {
+  max-width: 900px;
+  margin: auto;
+  margin-top: 3vh;
+  text-align: center;
+  line-height: 30px;
+}
+.h5Text {
+  padding: 40px 0 20px 0;
+
+}
+.h2Tag {
+  font-size: 40px;
+}
+.registerButton {
+  padding: 5px 25px 5px 25px;
+  font-size: 20px;
+}
+.red-button {
+  color: white;
+  background-color: red;
+  padding: 5px 20px 5px 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+
+.back {
+  color: white;
+  background-color: red;
+  padding: 5px 20px 5px 20px;
+  font-size: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.signInForm {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 30vw;
+  margin: 0 auto;
+  margin-top: 100px;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  z-index: 5;
+}
+
+.registerForm {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 30vw;
+  margin: 0 auto;
+  margin-top: 100px;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 50px;
+  padding-bottom: 80px;
+}
+.username {
+  width: 20vw;
+  height: 5vh;
+  border-radius: 5px;
+}
+.email {
+  width: 20vw;
+  height: 5vh;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+.password {
+  width: 20vw;
+  height: 5vh;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+.submit {
+  width: 21vw;
+  height: 5vh;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  font-size: 20px;
+}
+
+
+.latestShowsSection {
+  background-color: rgb(50, 51, 54);
+  margin-top: -40px;
+  padding-bottom: 60px;
+  padding-top: 15px;
+  overflow-x: scroll;
+}
+.showsCards {
+  color: black;
+  list-style: none;
+  width: 2000px;
+  text-align: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-top: 20px;
+
+}
+.showsCard {
+  height: 18.5vh;
+  width: 22vw;
+  box-shadow: 5px 12px 12px 5px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.card-body {
+  color: black;
+}
+
+.latestReviewsSection {
+  background-color: rgb(50, 51, 54);
+  margin-top: -40px;
+  padding-bottom: 60px;
+  padding-top: 15px;
+  overflow-x: scroll;
+}
+.reviewsCards {
+  color: black;
+  list-style: none;
+  width: 2000px;
+  text-align: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-top: 20px;
+  text-decoration: none;
+}
+.reviewsCard {
+  width: 22vw;
+  height: 54vh;
+  box-shadow: 5px 12px 12px 5px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+
+
+.allMoviesAndShowsTitle {
+  margin: auto;
+}
+
+.allMoviesAndShowsSection {
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-start;
+text-align: center;
+}
+.allMoviesAndShowsCards {
+  color: black;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: row-reverse; */
+  justify-content: space-around;
+  padding: 0 10px 0 10px;
+
+}
+.movieCardInAllMoviesAndShows {
+  height: 18.5vh;
+  width: 22vw;
+  margin: 20px 0 20px 0;
+  box-shadow: 5px 12px 12px 5px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.movieTitle {
+  text-align: center;
+  margin-bottom: 4vh;
+}
+
+.showPageImageDiv {
+  /* background-color: green; */
+  display: flex;
+}
+
+.showPageCard {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 3vw;
+}
+
+.movieTrailer {
+  position: relative;
+  left: 6vw;
+  width: 60vw;
+}
+
+
+.showPageLikesOutterShell {
+  width: 25vw;
+  margin-top: 1vw;
+  margin-left: 3vw;
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+.showPageLikesInnerShell {
+  text-align: right;
+  padding-right: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  background-color: rgb(232, 24, 9);
+  border-radius: 10px;
+}
+
+.showPageSummaryDiv {
+  width: 35vw;
+  margin-left: 3vw;
+  margin-top: 5vh;
+  padding: 1vw;
+  background-color: rgb(0,0,0,.4);
+  border-radius: 10px;
+  overflow-y: scroll;
+}
+
+.showPageBackground-img {
+  width: 100%;
+  height: cover;
+  filter: blur(5px);
+  position: absolute;
+  top: 130vh;
+  margin-top: -50vh;
+  z-index: -1;
+  background-blend-mode: overlay;
+}
+
+.likeAndBuyButtons {
+  display: flex;
+  width: 10vw;
+  position: relative;
+  left: 10vw;
+  top: .5vw;
+  gap: 1vw;
+}
+
+.likeOrDislike {
+  padding: 5px;
+  width: 5vw;
+  border-radius: 10px;
+}
+
+.showPageSummaryAndReviews {
+  display: flex;
+  gap: 8vh;
+  height: 70vh;
+  overflow-y: scroll;
+
+}
+
+.showPageReviewsDiv {
+  /* background-color: green; */
+  margin-top: 5vh;
+  width: 54vw;
+  position: relative;
+  overflow-y: scroll;
+  padding: 1vw;
+  background-color: rgb(0,0,0,.4);
+  border-radius: 10px;
+
+
+
+}
+.reviews-card-body {
+  /* background-color: orange; */
+  width: 52vw;
+}
+
+a {
+  text-decoration: none !important;
+  color: black !important;
+}

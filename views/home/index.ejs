@@ -1,0 +1,140 @@
+<%- include('../partials/header.ejs')%>
+
+
+    <img class = "background-img" src="https://xbox-store-checker.com/assets/upload/game/2019/02/optimize/9wzdncrfj3tj-background.jpg" alt="">
+
+    <ul class = "nav">
+      <h2 class = "logo">CrimeFlix</h2>
+        <li class = "nav-item">
+          <a class = "nav-link active" href = "/home"><p class = "header-links">Home</p></a>
+        </li>
+        <li class = "nav-item">
+          <a class = "nav-link active" href = "/movies"><p class = "header-links">Movies</p></a>
+        </li>
+        <li class = "nav-item">
+          <a class = "nav-link active" href = "/shows"><p class = "header-links">TV Shows</p></a>
+        </li>
+        <li class = "nav-item">
+          <a class = "nav-link active" href = "/reviews"><p class = "header-links">All Reviews</p></a>
+        </li>
+        <li class = "nav-item">
+          <a class = "nav-link active" href = "/submitreview"><p class = "header-links">Submit Review</p></a>
+        </li>
+        <li class = "nav-item">
+          <a class = "nav-link active" href = "/user/signin"><p class = "header-links">@Username</p></a>
+        </li>
+    </ul>
+
+
+    <section class = "moviesOfTheDaySection">
+    <h1>Movie Randomizer</h1>
+    <br>
+    <section class = "cards">
+      <% for (let i = 0; i < 3; i++) { %>
+      <% let random = 0 %>
+      <% for (let j = 0; j < Math.floor(Math.random() * movies.length); j++) { %>
+        <% random++ %>
+        <% } %>
+        <a href = "/movies/<%=movies[random]._id%>"><div class="card">
+          <li>
+            <form action="/movies/<%=movies[random]._id%>" method="">
+            <h3><u><strong><%=movies[random].name%></strong></u></h3>
+            <br>
+            <img src="<%=movies[random].img%>" alt="image" width = "75%">
+            <br>
+            <br>
+            <p><strong><%=movies[random].yearReleased%></strong></p>
+            </form>
+          </li>
+        </div></a>
+      <% } %>
+
+    </section>
+    </section>
+
+    <img class = "secondBackground-img" src="https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80" alt="image">
+
+
+    <section class = "latestMoviesSection">
+    <h3 style="margin-left: 20px;">Latest Movies</h3>
+    <section class = "moviesCards">
+      <% for (let i = movies.length - 1; i >= movies.length - 5; i--) { %>
+      <a href = "/movies/<%=movies[i]._id%>"><div class="movieCard">
+          <li>
+            <div class="card" style="width: 20rem; height: 10rem">
+              <img src="<%=movies[i].img2%>" class="card-img-top" alt="..." width = "20rem" height = "100%">
+              <div class="card-body">
+                 <p class="card-text" style="text-decoration:none"><%=movies[i].summary%></p>
+              </div>
+            </div>
+          </li>
+        </div></a>
+      <% } %>
+    </section>
+    </section>
+
+
+
+
+    <section class = "latestShowsSection">
+    <h3 style="margin-left: 20px;">Latest Shows</h3>
+    <section class = "showsCards">
+      <% for (let i = shows.length - 1; i >= shows.length - 5; i--) { %>
+        <a href = "/movies/<%=shows[i]._id%>"><div class="showsCard">
+          <li>
+            <div class="card" style="width: 20rem; height: 10rem">
+              <img src="<%=shows[i].img2%>" class="card-img-top" alt="..." width = "20rem" height = "100%">
+              <div class="card-body">
+                 <p class="card-text"><%=shows[i].summary%></p>
+              </div>
+            </div>
+          </li>
+        </div></a>
+      <% } %>
+    </section>
+    </section>
+
+
+
+
+    <section class = "latestReviewsSection">
+    <h3 style="margin-left: 20px;">Latest Movie Reviews</h3>
+    <section class = "reviewsCards">
+      <% for (let i = movies.length - 1; i >= movies.length - 5; i--) { %>
+        <a href = "/movies/<%=movies[i]._id%>"><div class="reviewsCard">
+          <li>
+            <div class="card" style="width: 20rem; height: 28rem">
+              <div class="card-body">
+                <h5 class = "movieTitleInReviewCard"><strong><%=movies[i].name%></strong></h5>
+                 <p class="card-text"><%=movies[i].reviews%></p>
+              </div>
+            </div>
+          </li>
+        </div></a>
+      <% } %>
+    </section>
+    </section>
+
+
+    <section class = "latestReviewsSection">
+    <h3 style="margin-left: 20px;">Latest Show Reviews</h3>
+    <section class = "reviewsCards">
+      <% for (let i = shows.length - 1; i >= shows.length - 5; i--) { %>
+        <a href = "/shows/<%=shows[i]._id%>"><div class="reviewsCard">
+          <li>
+            <div class="card" style="width: 20rem; height: 28rem">
+              <div class="card-body">
+                <h5 class = "movieTitleInReviewCard"><strong><%=shows[i].name%></strong></h5>
+                 <p class="card-text"><%=shows[i].reviews%></p>
+              </div>
+            </div>
+          </li>
+        </div></a>
+      <% } %>
+    </section>
+    </section>
+
+
+
+
+<%- include('../partials/footer.ejs')%>

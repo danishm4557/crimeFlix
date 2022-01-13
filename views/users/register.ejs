@@ -1,0 +1,36 @@
+<%- include('../partials/header.ejs')%>
+
+
+
+    </style>
+  </head>
+  <body>
+
+    <img class = "background-img" src="https://xbox-store-checker.com/assets/upload/game/2019/02/optimize/9wzdncrfj3tj-background.jpg" alt="">
+
+    <ul class = "nav">
+      <h1>CrimeFlix</h1>
+        <li class = "nav-item">
+          <a class = "back" href = "/user">Back</a>
+        </li>
+    </ul>
+
+    <form class = "registerForm" action="/home" method="POST">
+      <h3>Register</h3>
+      <input class = "username" type="text" name="username" placeholder="Username">
+      <br>
+      <input class = "email" type="text" name="email" placeholder="Email">
+      <br>
+
+      <input class = "password" type="password" name="password" placeholder="Password">
+      <br>
+      <br>
+      <input class = "submit" type="submit" name="submit" value="Register">
+    </form>
+
+
+
+
+
+
+<%- include('../partials/footer.ejs')%>

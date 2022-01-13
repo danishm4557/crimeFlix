@@ -1,0 +1,49 @@
+<%- include('../partials/header.ejs')%>
+
+
+<img class = "background-img" src="https://xbox-store-checker.com/assets/upload/game/2019/02/optimize/9wzdncrfj3tj-background.jpg" alt="">
+
+  <ul class = "nav">
+    <h2 class = "logo">CrimeFlix</h2>
+      <li class = "nav-item">
+        <a class = "nav-link active" href = "/home"><p class = "header-links">Home</p></a>
+      </li>
+      <li class = "nav-item">
+        <a class = "nav-link active" href = "/movies"><p class = "header-links">Movies</p></a>
+      </li>
+      <li class = "nav-item">
+        <a class = "nav-link active" href = "/shows"><p class = "header-links">TV Shows</p></a>
+      </li>
+      <li class = "nav-item">
+        <a class = "nav-link active" href = "/reviews"><p class = "header-links">All Reviews</p></a>
+      </li>
+      <li class = "nav-item">
+        <a class = "nav-link active" href = "/submitreview"><p class = "header-links">Submit Review</p></a>
+      </li>
+      <li class = "nav-item">
+        <a class = "nav-link active" href = "/user/signin"><p class = "header-links">@Username</p></a>
+      </li>
+  </ul>
+
+  <section class = "allMoviesAndShowsSection">
+  <h3 class = "allMoviesAndShowsTitle">All Crime Shows</h3>
+  <section class = "allMoviesAndShowsCards">
+    <% for (let i = 0; i < shows.length; i++) { %>
+    <a href = "/movies/<%=shows[i]._id%>"><div class="movieCardInAllMoviesAndShows">
+        <li>
+          <div class="card" style="width: 20rem; height: 10rem">
+            <img src="<%=shows[i].img2%>" class="card-img-top" alt="..." width = "20rem" height = "100%">
+            <div class="card-body">
+               <p class="card-text"><%=shows[i].summary%></p>
+            </div>
+          </div>
+        </li>
+      </div></a>
+    <% } %>
+  </section>
+  </section>
+
+
+
+
+<%- include('../partials/footer.ejs')%>

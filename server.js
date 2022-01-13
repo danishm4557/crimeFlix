@@ -12,6 +12,14 @@ const PORT = process.env.PORT
 
 
 
+// USE PUBLIC (CSS) FILE
+app.use(express.static('public'))
+
+
+
+// INTERPRET INCOMING REQUESTS AS JSON
+app.use(express.json())
+
 
 // USE PARSE DATA
 app.use(express.urlencoded({extended: true}))
@@ -76,6 +84,9 @@ app.use('/shows', showsController)
 
 const usersController = require('./controllers/usersController')
 app.use('/user', usersController)
+
+const homeController = require('./controllers/homeController')
+app.use('/home', homeController)
 
 
 
