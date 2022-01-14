@@ -15,10 +15,7 @@
         <a class = "nav-link active" href = "/shows"><p class = "header-links">TV Shows</p></a>
       </li>
       <li class = "nav-item">
-        <a class = "nav-link active" href = "/reviews"><p class = "header-links">All Reviews</p></a>
-      </li>
-      <li class = "nav-item">
-        <a class = "nav-link active" href = "/submitreview"><p class = "header-links">Submit Review</p></a>
+        <a class = "nav-link active" href = "/home/reviews"><p class = "header-links">All Reviews</p></a>
       </li>
       <li class = "nav-item">
         <a class = "nav-link active" href = "/user/signin"><p class = "header-links">@Username</p></a>
@@ -29,7 +26,7 @@
   <h3 class = "allMoviesAndShowsTitle">All Crime Shows</h3>
   <section class = "allMoviesAndShowsCards">
     <% for (let i = 0; i < shows.length; i++) { %>
-    <a href = "/movies/<%=shows[i]._id%>"><div class="movieCardInAllMoviesAndShows">
+    <a href = "/shows/<%=shows[i]._id%>"><div class="movieCardInAllMoviesAndShows">
         <li>
           <div class="card" style="width: 20rem; height: 10rem">
             <img src="<%=shows[i].img2%>" class="card-img-top" alt="..." width = "20rem" height = "100%">

@@ -2,8 +2,68 @@
 
 <img class = "background-img" src="https://xbox-store-checker.com/assets/upload/game/2019/02/optimize/9wzdncrfj3tj-background.jpg" alt="">
 
+<ul class = "nav">
+  <h2 class = "logo">CrimeFlix</h2>
+    <li class = "nav-item">
+      <a class = "nav-link active" href = "/home"><p class = "header-links">Home</p></a>
+    </li>
+    <li class = "nav-item">
+      <a class = "nav-link active" href = "/movies"><p class = "header-links">Movies</p></a>
+    </li>
+    <li class = "nav-item">
+      <a class = "nav-link active" href = "/shows"><p class = "header-links">TV Shows</p></a>
+    </li>
+    <li class = "nav-item">
+      <a class = "nav-link active" href = "/home/reviews"><p class = "header-links">All Reviews</p></a>
+    </li>
+    <li class = "nav-item">
+      <a class = "nav-link active" href = "/user/signin"><p class = "header-links">@Username</p></a>
+    </li>
+</ul>
 
 
+
+
+<section class = "latestReviewsPageSection">
+<h3 style="margin-left: 20px;">All Movie Reviews</h3>
+<section class = "reviewsCards">
+  <% for (let i = movies.length - 1; i >= movies.length - 5; i--) { %>
+    <a href = "/movies/<%=movies[i]._id%>"><div class="reviewsCard">
+      <li>
+        <div class="card" style="width: 20rem; height: 28rem">
+          <div class="card-body">
+            <h5 class = "movieTitleInReviewCard"><strong><%=movies[i].name%></strong></h5>
+             <p class="card-text"><%=movies[i].reviews%></p>
+             <hr>
+             <hr>
+          </div>
+        </div>
+      </li>
+    </div></a>
+  <% } %>
+</section>
+</section>
+
+
+<section class = "latestReviewsPageSection">
+<h3 style="margin-left: 20px;">All Show Reviews</h3>
+<section class = "reviewsCards">
+  <% for (let i = shows.length - 1; i >= shows.length - 5; i--) { %>
+    <a href = "/shows/<%=shows[i]._id%>"><div class="reviewsCard">
+      <li>
+        <div class="card" style="width: 20rem; height: 28rem">
+          <div class="card-body">
+            <h5 class = "movieTitleInReviewCard"><strong><%=shows[i].name%></strong></h5>
+             <p class="card-text"><%=shows[i].reviews%></p>
+          </div>
+        </div>
+      </li>
+    </div></a>
+  <% } %>
+</section>
+</section>
+
+<img class = "reviewsPageBackground-img" src="https://xbox-store-checker.com/assets/upload/game/2019/02/optimize/9wzdncrfj3tj-background.jpg" alt="">
 
 
 

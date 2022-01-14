@@ -15,10 +15,7 @@
       <a class = "nav-link active" href = "/shows"><p class = "header-links">TV Shows</p></a>
     </li>
     <li class = "nav-item">
-      <a class = "nav-link active" href = "/reviews"><p class = "header-links">All Reviews</p></a>
-    </li>
-    <li class = "nav-item">
-      <a class = "nav-link active" href = "/submitreview"><p class = "header-links">Submit Review</p></a>
+      <a class = "nav-link active" href = "/home/reviews"><p class = "header-links">All Reviews</p></a>
     </li>
     <li class = "nav-item">
       <a class = "nav-link active" href = "/user/signin"><p class = "header-links">@Username</p></a>
@@ -31,7 +28,7 @@
   <img class = "card showPageCard" src="<%=movie.img%>" alt="image" width="75%">
 
   <iframe class = "movieTrailer" max-width="700"
-  src="https://www.youtube.com/embed/tgbNymZ7vqY">
+  src="<%=movie.trailer%>">
   </iframe>
 </div>
 
@@ -42,14 +39,15 @@
 </div>
 
 <div class="likeAndBuyButtons">
-  <form class="" action="index.html" method="post">
+  <form class="likeButton" action="/movies/<%=movie._id%>/like?_method=PUT" method="POST">
     <input class = "likeOrDislike" type="submit" name="like" value="Like">
   </form>
-  <form class="" action="index.html" method="post">
+  <form class="dislikeButton" action="/movies/<%=movie._id%>/dislike?_method=PUT" method="POST">
     <input class = "likeOrDislike" type="submit" name="" value="Dislike">
   </form>
 </div>
 
+<img class = "showPageBackground-img" src="https://xbox-store-checker.com/assets/upload/game/2019/02/optimize/9wzdncrfj3tj-background.jpg" alt="">
 
 <div class="showPageSummaryAndReviews">
 <div class="showPageSummaryDiv">
@@ -60,22 +58,32 @@
 </div>
 
 
-
 <div class="showPageReviewsDiv">
   <h3><u>Reviews</u></h3>
+  <div class="reviews-card-body">
   <% for (let i = 0; i < movie.reviews.length; i++) { %>
     <div class="reviews-card-body">
        <p class="card-text" style="text-decoration:none"><%=movie.reviews[i]%></p>
+      <form class="" action="/movies/deletereview/:id/<%=[i]%>" method="POST">
+        <input type="submit" name="review" value="Delete">
+      </form>
        <p>@username</p>
+       <p><%=movie.createdAt%></p>
        <hr>
        <hr>
-       <p class="card-text" style="text-decoration:none"><%=movie.reviews[i]%></p>
-       <p>@username</p>
     </div>
   <% } %>
 </div>
 </div>
-<img class = "showPageBackground-img" src="https://xbox-store-checker.com/assets/upload/game/2019/02/optimize/9wzdncrfj3tj-background.jpg" alt="">
+</div>
+<button class="leaveReviewButton"><a class="white" href="/movies/submitreview/<%=movie._id%>">Add a Review!</a></button>
+<form action="/movies/<%=movie._id%>?_method=DELETE" method="POST">
+<input class="deleteButton" type="submit" value="Delete Movie">
+</form>
+
+
+
+
 
 
 <%- include('../partials/footer.ejs')%>

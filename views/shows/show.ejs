@@ -2,6 +2,86 @@
 
 
 
+<img class = "background-img" src="https://xbox-store-checker.com/assets/upload/game/2019/02/optimize/9wzdncrfj3tj-background.jpg" alt="">
+<ul class = "nav">
+  <h2 class = "logo">CrimeFlix</h2>
+    <li class = "nav-item">
+      <a class = "nav-link active" href = "/home"><p class = "header-links">Home</p></a>
+    </li>
+    <li class = "nav-item">
+      <a class = "nav-link active" href = "/movies"><p class = "header-links">Movies</p></a>
+    </li>
+    <li class = "nav-item">
+      <a class = "nav-link active" href = "/shows"><p class = "header-links">TV Shows</p></a>
+    </li>
+    <li class = "nav-item">
+      <a class = "nav-link active" href = "/home/reviews"><p class = "header-links">All Reviews</p></a>
+    </li>
+    <li class = "nav-item">
+      <a class = "nav-link active" href = "/user/signin"><p class = "header-links">@Username</p></a>
+    </li>
+</ul>
+
+<h3 class = "movieTitle"><%=show.name%></h3>
+
+<div class="showPageImageDiv">
+  <img class = "card showPageCard" src="<%=show.img%>" alt="image" width="75%">
+
+  <iframe class = "movieTrailer" max-width="700"
+  src="<%=show.trailer%>">
+  </iframe>
+</div>
+
+<div class="showPageLikesOutterShell">
+  <div class="showPageLikesInnerShell" style="width:<%=likedPercentage%>%">
+    <%=likedPercentage%>% liked this show
+  </div>
+</div>
+
+<div class="likeAndBuyButtons">
+  <form class="" action="/shows/<%=show._id%>/like?_method=PUT" method="post">
+    <input class = "likeOrDislike" type="submit" name="like" value="Like">
+  </form>
+  <form class="" action="/shows/<%=show._id%>/dislike?_method=PUT" method="post">
+    <input class = "likeOrDislike" type="submit" name="" value="Dislike">
+  </form>
+</div>
+
+<img class = "showPageBackground-img" src="https://xbox-store-checker.com/assets/upload/game/2019/02/optimize/9wzdncrfj3tj-background.jpg" alt="">
+
+<div class="showPageSummaryAndReviews">
+<div class="showPageSummaryDiv">
+  <div class="">
+    <h3><u>Summary</u></h3>
+    <p><%=show.summary%></p>
+  </div>
+</div>
+
+
+
+<div class="showPageReviewsDiv">
+  <h3><u>Reviews</u></h3>
+  <div class="reviews-card-body">
+  <% for (let i = 0; i < show.reviews.length; i++) { %>
+    <div class="reviews-card-body">
+       <p class="card-text" style="text-decoration:none"><%=show.reviews[i]%></p>
+       <p>@username</p>
+       <p><%=show.createdAt%></p>
+       <hr>
+       <hr>
+    </div>
+  <% } %>
+</div>
+</div>
+</div>
+<button class="leaveReviewButton"><a class="white" href="/shows/submitreview/<%=show._id%>">Add a Review!</a></button>
+<form action="/show/<%=show._id%>?_method=DELETE" method="POST">
+<input class="deleteButton" type="submit" value="Delete Show">
+</form>
+
+
+
+
 
 
 

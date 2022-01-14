@@ -1,0 +1,19 @@
+<%- include('../partials/header.ejs') %>
+
+<img class="reviewPageImage" src="https://xbox-store-checker.com/assets/upload/game/2019/02/optimize/9wzdncrfj3tj-background.jpg" alt="">
+
+
+<form class="reviewForm" action="/shows/submitreview/<%=showId%>" method=POST>
+  <br>
+  <br>
+  <h3>Review:</h3>
+  <br>
+  <textarea name="review" rows="10" cols="60" placeholder="Enter Review Here"></textarea>
+  <input class = "red-button" type="submit" name="submit" value="Submit">
+</form>
+
+
+
+
+
+<%- include('../partials/footer.ejs')%>

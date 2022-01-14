@@ -9,8 +9,10 @@ const movieSchema = new mongoose.Schema({
   summary: String,
   reviews: [String],
   likes: Number,
-  dislikes: Number
-});
+  dislikes: Number,
+  trailer: String
+}, {timestamps: true}
+);
 
 const Movie = mongoose.model('Movie', movieSchema)
 

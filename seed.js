@@ -89,14 +89,15 @@ const newShows =
 [
   {
     name: 'Peaky Blinders',
-    img: 'https://static.wikia.nocookie.net/peaky-blinders/images/0/0a/Peaky_Blinders_4.jpg/revision/latest?cb=20180110141315',
+    img: 'https://flxt.tmsimg.com/assets/p11094767_b_v13_aa.jpg',
     img2: 'https://cdn.akamai.steamstatic.com/steam/apps/1013310/capsule_616x353.jpg?t=1617702082',
     yearReleased: 2013,
     seasons: 5,
     summary: "Britain is a mixture of despair and hedonism in 1919 in the aftermath of the Great War. Returning soldiers, newly minted revolutions and criminal gangs are fighting for survival in a nation rocked by economic upheaval. One of the most powerful gangs of the time is the Peaky Blinders, run by returning war hero Thomas Shelby and his family. But Thomas has bigger ambitions than just running the streets. When a crate of guns goes missing, he recognizes an opportunity to advance in the world because crime may pay but legitimate business pays better. Trying to rid Britain of its crime is Inspector Chester Campbell, who arrives from Belfast to try to achieve that goal.",
     reviews: ["I have recently completed the whole series  and I cannot stop praising about everything 'PEAKY BLINDERS'. Amazing direction, Unforgettable acting skills, Unreplaceable castings and on the top of all Editing, music, locations, background was superb. This series will grab your attention and make yourself indulge and addicted towards it in very short period of time. All the series if u watch continuously will not make any differences and unconnected by direction. Editors avoided unnecessary complexities of story and stay connected as story began. Talking about Cillian Murphy (Tommy Shelby) is an undeniable talented actor who plays with his expressions and make everyone fan of him, especially when his wife (Grace) dies. Anabelle Wallis (Grace) was beautiful and amazing character but I wanted to see her more part especially after separating from Tommy and gun shot. Polly (Helen McCrory) A woman who acted as being supporter, head of family, a mother, a mother-in-law and a caring woman shows all the roles through her expression. The lady is milestone. Arthur, John, Ada, Esme and other characters (main and side roles). The negative characters were too damn amazing. In the end, Its a worth watching show and definitely, nobody can regret after watching."],
     likes: 960,
-    dislikes: 40
+    dislikes: 40,
+    trailer: "https://www.youtube.com/embed/2nsT9uQPIrk"
   },
   {
     name: 'Mindhunter',
@@ -107,7 +108,8 @@ const newShows =
     summary: "Catching a criminal often requires the authorities to get inside the villain's mind to figure out how he thinks. That's the job of FBI agents Holden Ford and Bill Tench. They attempt to understand and catch serial killers by studying their damaged psyches. Along the way, the agents pioneer the development of modern serial-killer profiling. The crime drama has a strong pedigree behind the camera, with Oscar-nominated director David Fincher and Oscar-winning actress Charlize Theron among the show's executive producers.",
     reviews: ["Absolutely outstanding in every respect. Extremely well directed with meticulous attention to period (mid to late 70's) detail, Mindhunter is a tour de force in the field of criminal psychology. I love the combination of the academic relative rookie who wants to get inside the minds and motivations of serial killers juxtaposed with the world weary hard bitten veteran FBI agent. Neither character is in any way cliched and they work together superbly. Mindhunters also pays exceptional attention to character development and the story lines are always gripping, particularly when the team get involved in various grizzly murder investigations. The acting is also uniformly superb though for me the standout is Cameron Brittons' portrayal of the serial killer Edmund - a very different character but his acting is every bit as good as Anthony Hopkins as Dr. Lecter. Having binge watched series 1 and 2 I really hope that Netflix decides to continue with this. It's by far the best criminal psychology series that I've ever watched."],
     likes: 920,
-    dislikes: 80
+    dislikes: 80,
+    trailer: "https://www.youtube.com/embed/oFlKiTwhd38"
   },
   {
     name: 'Power',
@@ -118,18 +120,8 @@ const newShows =
     summary: "It appears James 'Ghost' St. Patrick has it all -- a drop-dead gorgeous wife, a stunning Manhattan penthouse, and the power and success that come with owning hot new nightclub Truth. But a closer look reveals a man living a double life. When Ghost isn't tending to his Fortune 500 business, he's catering to clients of another operation: a drug empire that serves only the rich and influential. While loyal sidekick Tommy protects the cash-cow narcotics venture at all costs, Ghost's new reality is using Truth as more than a front to launder money. It's a way out of the drug game and into a legitimate life with his family, even if everything he loves becomes unknowingly threatened. 'Power' is co-executive produced by Curtis '50 Cent' Jackson (who also co-stars) and show creator Courtney Kemp Agboh ('The Good Wife').",
     reviews: ["Absolutely LOVE this show!!! Never seen it or heard of it before we found it then we've binged watched and we loved it! I Love Tommy think he's great anyone who wants to say anything about his acting is just being picky He's a white guy trying to act like he's black what do you expect lol But he's a true G that's for sure!!! Totally an utterly a stand-up guy, ghost on the other hand first I liked him but then he started getting shadier and shadier by the minute everybody got his back but he's always looking out for numero uno! Cannot wait to see how Tasha does with the kid at first I didn't agree with what she was doing but when you actually sit down and think about it she's right he's going to do it anyways so might as well teach him to do it the right way instead of him getting into trouble and stuff. And yes I agree 50s acting  is not the best But lala Anthony is way worse I wish they'd get rid of her she's loud she's annoying she's a crybaby trying to act like she's all hard and she ain't and she going to bring Tommy down Tommy should choke her out like he did Holly"],
     likes: 900,
-    dislikes: 100
-  },
-  {
-    name: 'Queen of the South',
-    img: 'https://static.wikia.nocookie.net/queen-of-the-south/images/a/a1/QofS-Poster-S2.jpg/revision/latest?cb=20191025122234',
-    img2: 'https://ntvb.tmsimg.com/assets/p12825386_b_h8_ay.jpg?w=960&h=540',
-    yearReleased: 2016,
-    seasons: 5,
-    summary: "While living in the barrio of Jalisco, Mexico, poor Teresa Mendoza falls in love with a member of a successful drug cartel, hoping the love will help her rise above the hopelessness she feels in her life. When it doesn't happen, she is forced to flee the country after her boyfriend is murdered. She seeks refuge in America, where she teams up with an unlikely person from her past to take down the leader of the drug ring that is after her. Teresa ends up starting her own drug empire, becoming one of the world's wealthiest women in the process. With her success, she discovers that money doesn't fix all of her problems, and she can only depend on herself if she wants to stay one step ahead of others and stay alive.",
-    reviews: ["BEST SERIES ON TV IN 10 YEARS!!! I COULD NOT WAIT TO WATCH THE NEXT SHOW FOLLOWING ON SUNDAYS! Alice Braga was SOOOO talented as an actress and made the series so believable! Pote (Hemky Madera) was the real deal and gave me goose bumps every time he was in a shot and protecting Theresa with his life made it so realistic and warming of ones heart! James (Peter Gadiot) )was my 3rd favorite & a very talented and very believable role which he played! LOOK FORWARD TO SEEING ALL THE 5 MAJOR CAST MEMBERS IN THE SERIES FINALLY INCLUDING THERESA'S ALMOST LIKE A BROTHER KING GEORGE (Ryan O'Nan).CAN'T WAIT YOU ONE BIG HAPPY FAMILY!!"],
-    likes: 910,
-    dislikes: 90
+    dislikes: 100,
+    trailer: "https://www.youtube.com/embed/jfXbEx_nq3A"
   },
   {
     name: 'Money Heist',
@@ -140,7 +132,20 @@ const newShows =
     summary: "A criminal mastermind who goes by 'The Professor' has a plan to pull off the biggest heist in recorded history -- to print billions of euros in the Royal Mint of Spain. To help him carry out the ambitious plan, he recruits eight people with certain abilities and who have nothing to lose. The group of thieves take hostages to aid in their negotiations with the authorities, who strategize to come up with a way to capture The Professor. As more time elapses, the robbers prepare for a showdown with the police.",
     reviews: ["The biggest Heist in the history. This is probably Netflix’s best and the most successful original show. In a bold story made up, full of original ideas, excellent acting, a lot of tense moments cleverly woven with funny moments- this is the jewel in the Netflix crown. The thing that keeps this show interesting is the fact that 3 different taking place at same time and three different places - The Inspector, The professor and the Heist. GREAT!! With its unpredictable and overwhelming plot, this series so addictive that one will definitely complete it in binge watch. I have been watching it since 2 days without a break. Haha! And eating like crazy. The series revolves around a very strong, mysterious, genius yet very kind man name Sergio Martinez(The Professor) who spends half of his life planning the biggest robbery in the history with a very dangerous but capable crew. Really love the strong bond between the crew. Tokyo and Nairobi my favourite ones and ohhh How can I forget The inspector? She is super dooper great at doing justice to her character. Even in my dreams last night I was into this Heist with my friend Haha! The series just gets better and better from part one to part 2, then part 3 and part 4 is even better. I can't just wait for part 5 to come. Masterpiece indeed! Totally worth the time, attention and goosebumps throughout the series! Must watch. Are you getting bored? Don’t get bored, go sign in Netflix and watch this amazing show!"],
     likes: 910,
-    dislikes: 90
+    dislikes: 90,
+    trailer: "https://www.youtube.com/embed/_InqQJRqGW4"
+  },
+  {
+    name: 'Breaking Bad',
+    img: 'https://flxt.tmsimg.com/assets/p185846_b_v8_ad.jpg',
+    img2: 'https://images.indianexpress.com/2018/01/breaking-bad-759.jpg',
+    yearReleased: 2017,
+    seasons: 5,
+    summary: "A criminal mastermind who goes by 'The Professor' has a plan to pull off the biggest heist in recorded history -- to print billions of euros in the Royal Mint of Spain. To help him carry out the ambitious plan, he recruits eight people with certain abilities and who have nothing to lose. The group of thieves take hostages to aid in their negotiations with the authorities, who strategize to come up with a way to capture The Professor. As more time elapses, the robbers prepare for a showdown with the police.",
+    reviews: ["The biggest Heist in the history. This is probably Netflix’s best and the most successful original show. In a bold story made up, full of original ideas, excellent acting, a lot of tense moments cleverly woven with funny moments- this is the jewel in the Netflix crown. The thing that keeps this show interesting is the fact that 3 different taking place at same time and three different places - The Inspector, The professor and the Heist. GREAT!! With its unpredictable and overwhelming plot, this series so addictive that one will definitely complete it in binge watch. I have been watching it since 2 days without a break. Haha! And eating like crazy. The series revolves around a very strong, mysterious, genius yet very kind man name Sergio Martinez(The Professor) who spends half of his life planning the biggest robbery in the history with a very dangerous but capable crew. Really love the strong bond between the crew. Tokyo and Nairobi my favourite ones and ohhh How can I forget The inspector? She is super dooper great at doing justice to her character. Even in my dreams last night I was into this Heist with my friend Haha! The series just gets better and better from part one to part 2, then part 3 and part 4 is even better. I can't just wait for part 5 to come. Masterpiece indeed! Totally worth the time, attention and goosebumps throughout the series! Must watch. Are you getting bored? Don’t get bored, go sign in Netflix and watch this amazing show!"],
+    likes: 910,
+    dislikes: 90,
+    trailer: "https://www.youtube.com/embed/_InqQJRqGW4"
   }
 ]
 
