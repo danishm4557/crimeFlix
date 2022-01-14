@@ -2,7 +2,7 @@ const Movie = require('./models/movies')
 const Show = require('./models/shows')
 const mongoose = require('mongoose')
 
-const mongoURL = 'mongodb://127.0.0.1:27017/crimeflix'
+const mongoURL = 'mongodb+srv://danishm4557:atlas0786@cluster0.zsftl.mongodb.net/crimeFlix?retryWrites=true&w=majority'
 const db = mongoose.connection
 mongoose.connect(mongoURL, {
   useNewUrlParser: true,

@@ -34,7 +34,7 @@ console.log(shows);
 router.get('/', authRequired, (req, res) => {
   console.log(shows);
   Movie.find({}, (err, allMovies) => {
-      res.render('../views/home/index.ejs', {movies: allMovies, shows: shows})
+      res.render('home/index.ejs', {movies: allMovies, shows: shows})
   })
 })
 
@@ -42,7 +42,7 @@ router.get('/', authRequired, (req, res) => {
 router.get('/reviews', (req, res) => {
   console.log(shows);
   Movie.find({}, (err, allMovies) => {
-      res.render('../views/home/reviews.ejs', {movies: allMovies, shows: shows})
+      res.render('home/reviews.ejs', {movies: allMovies, shows: shows})
   })
 })
 

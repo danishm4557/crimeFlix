@@ -28,7 +28,7 @@ router.get('/', authRequired, (req, res) => {
       console.log(err);
     } else {
       console.log(allMovies);
-      res.render('../views/movies/index.ejs', {movies: allMovies})
+      res.render('movies/index.ejs', {movies: allMovies})
     }
   })
 })
@@ -42,7 +42,7 @@ router.get('/:id', (req, res) => {
     } else {
       likedPercentage = (foundMovie.likes/(foundMovie.likes+foundMovie.dislikes))*100
       likedPercentage = Number.parseFloat(likedPercentage).toFixed(2)
-      res.render('../views/movies/show.ejs', {movie: foundMovie, likedPercentage: likedPercentage})
+      res.render('movies/show.ejs', {movie: foundMovie, likedPercentage: likedPercentage})
       console.log(foundMovie);
       console.log(likedPercentage);
     }
@@ -61,7 +61,7 @@ router.put('/:id/like', (req, res) => {
       foundMovie.save()
       likedPercentage = ((foundMovie.likes/(foundMovie.likes+foundMovie.dislikes))*100)
       likedPercentage = Number.parseFloat(likedPercentage).toFixed(2)
-      res.render('../views/movies/show.ejs', {movie: foundMovie, likedPercentage: likedPercentage})
+      res.render('movies/show.ejs', {movie: foundMovie, likedPercentage: likedPercentage})
       }
     }
   })
@@ -78,7 +78,7 @@ router.put('/:id/dislike', (req, res) => {
       foundMovie.save()
       likedPercentage = ((foundMovie.likes/(foundMovie.likes+foundMovie.dislikes))*100)
       likedPercentage = Number.parseFloat(likedPercentage).toFixed(2)
-    res.render('../views/movies/show.ejs', {movie: foundMovie, likedPercentage: likedPercentage})
+    res.render('movies/show.ejs', {movie: foundMovie, likedPercentage: likedPercentage})
       }
     }
   })
@@ -87,7 +87,7 @@ router.put('/:id/dislike', (req, res) => {
 
 // movie
 router.get('/submitreview/:id', (req, res) => {
-      res.render('../views/movies/submitReview.ejs', {movieId: req.params.id})
+      res.render('movies/submitReview.ejs', {movieId: req.params.id})
   })
 
 router.post('/submitreview/:id', (req, res) => {

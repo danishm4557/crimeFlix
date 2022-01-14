@@ -21,7 +21,7 @@ const authRequired = (req, res, next) => {
 router.get('/', authRequired, (req, res) => {
   Show.find({}, (err, allShows) => {
       console.log(allShows);
-      res.render('../views/shows/index.ejs', {shows: allShows})
+      res.render('shows/index.ejs', {shows: allShows})
   })
 })
 
@@ -33,7 +33,7 @@ router.get('/:id', (req, res) => {
       console.log(err);
     } else {
       likedPercentage = (foundShow.likes/(foundShow.likes+foundShow.dislikes))*100
-      res.render('../views/shows/show.ejs', {show: foundShow, likedPercentage: likedPercentage})
+      res.render('shows/show.ejs', {show: foundShow, likedPercentage: likedPercentage})
       likedPercentage = Number.parseFloat(likedPercentage).toFixed(2)
       console.log(foundShow);
       console.log(likedPercentage);
@@ -52,7 +52,7 @@ router.put('/:id/like', (req, res) => {
       foundShow.save()
       likedPercentage = ((foundShow.likes/(foundShow.likes+foundShow.dislikes))*100)
       likedPercentage = Number.parseFloat(likedPercentage).toFixed(2)
-    res.render('../views/shows/show.ejs', {show: foundShow, likedPercentage: likedPercentage})
+    res.render('shows/show.ejs', {show: foundShow, likedPercentage: likedPercentage})
       }
     }
   })
@@ -69,7 +69,7 @@ router.put('/:id/dislike', (req, res) => {
       foundShow.save()
       likedPercentage = ((foundShow.likes/(foundShow.likes+foundShow.dislikes))*100)
       likedPercentage = Number.parseFloat(likedPercentage).toFixed(2)
-      res.render('../views/shows/show.ejs', {show: foundShow, likedPercentage: likedPercentage})
+      res.render('shows/show.ejs', {show: foundShow, likedPercentage: likedPercentage})
       }
     }
   })
@@ -80,7 +80,7 @@ router.put('/:id/dislike', (req, res) => {
 
 // shows
 router.get('/submitreview/:id', (req, res) => {
-      res.render('../views/shows/submitReview.ejs', {showId: req.params.id})
+      res.render('shows/submitReview.ejs', {showId: req.params.id})
   })
 
 router.post('/submitreview/:id', (req, res) => {
