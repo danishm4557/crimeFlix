@@ -1,6 +1,12 @@
 {
   "name": "crimeflix",
   "version": "1.0.0",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "17.1.0"
+  },
   "description": "Movies/TV Shows platform very similar to Netflix but with a focus on the crime genre.",
   "main": "server.js",
   "scripts": {
