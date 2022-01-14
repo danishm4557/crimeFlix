@@ -31,7 +31,6 @@
       <% let random = 0 %>
       <% for (let j = 0; j < Math.floor(Math.random() * movies.length); j++) { %>
         <% random++ %>
-        <% } %>
         <a href = "/movies/<%=movies[random]._id%>"><div class="card">
           <li>
             <form action="/movies/<%=movies[random]._id%>" method="">
@@ -44,6 +43,7 @@
             </form>
           </li>
         </div></a>
+        <% } %>
       <% } %>
 
     </section>
