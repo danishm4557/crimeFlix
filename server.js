@@ -67,7 +67,9 @@ db.on('error', (err) => {console.log('error: ', err)})
 db.on('connected', () => {console.log('mongo connected')})
 db.on('disconnected', () => {console.log('mongo disconnected')})
 
-
+app.get('/', (req, res) => {
+  res.redirect('/user')
+})
 
 
 
