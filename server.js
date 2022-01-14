@@ -63,7 +63,7 @@ mongoose.connect(mongoURL, {
   console.log('Database Connected');
 })
 
-db.on('error', () => {console.log('error: ', err)})
+db.on('error', (err) => {console.log('error: ', err)})
 db.on('connected', () => {console.log('mongo connected')})
 db.on('disconnected', () => {console.log('mongo disconnected')})
 
