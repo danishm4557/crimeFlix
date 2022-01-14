@@ -8,11 +8,11 @@ const User = require('../models/users.js')
 
 
 router.get('/', (req, res) => {
-  res.render('../views/users/index.ejs')
+  res.render('users/index.ejs')
 })
 
 router.get('/register', (req, res) => {
-  res.render('../views/users/register.ejs')
+  res.render('users/register.ejs')
 })
 
 
@@ -38,7 +38,7 @@ router.post('/register', (req, res) => {
 
 
 router.get('/signin', (req, res) => {
-  res.render('../views/users/signin.ejs')
+  res.render('users/signin.ejs')
 })
 
 router.post('/signin', (req, res) => {
