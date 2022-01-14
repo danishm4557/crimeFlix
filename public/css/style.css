@@ -34,16 +34,16 @@ body {
   justify-content: space-around;
   margin: auto;
   margin-top: 20px;
+
 }
 .card {
   max-height: 600px;
   max-width: 25vw;
   padding: 10px;
   overflow: scroll;
-  box-shadow: 5px 12px 12px 5px rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 12px 12px 5px rgba(255, 255, 255, .2);
   border-radius: 10px;
   text-decoration: none;
-  text-decoration-line:
 }
 .card:hover {
   box-shadow: 5px 12px 30px 5px rgba(255, 255, 255, 0.5);
@@ -67,6 +67,7 @@ body {
   padding-bottom: 60px;
   padding-top: 15px;
   overflow-x: scroll;
+
 }
 .moviesCards {
   color: black;
@@ -77,7 +78,6 @@ body {
   flex-direction: row-reverse;
   justify-content: space-between;
   margin-top: 20px;
-
 }
 .movieCard {
   height: 18.5vh;
@@ -195,17 +195,22 @@ body {
   justify-content: space-between;
   margin-top: 20px;
 
+
 }
 .showsCard {
   height: 18.5vh;
   width: 22vw;
   box-shadow: 5px 12px 12px 5px rgba(255, 255, 255, 0.2);
   border-radius: 10px;
+  background-color: gray;
+  border-radius: 10px;
+
 }
 
 .card-body {
   color: black;
 }
+
 
 .latestReviewsSection {
   background-color: rgb(50, 51, 54);
@@ -343,7 +348,7 @@ text-align: center;
   display: flex;
   gap: 8vh;
   height: 70vh;
-  overflow-y: scroll;
+  overflow: auto;
 
 }
 
@@ -356,6 +361,7 @@ text-align: center;
   padding: 1vw;
   background-color: rgb(0,0,0,.4);
   border-radius: 10px;
+  overflow: auto;
 
 
 
@@ -363,6 +369,7 @@ text-align: center;
 .reviews-card-body {
   /* background-color: orange; */
   width: 52vw;
+  overflow: auto;
 }
 
 
@@ -446,6 +453,10 @@ text-align: center;
   padding: 0.8vw .8vw 0.8vw .8vw;
   font-size: 20px;
   border-radius: 10px;
+}
+
+.card {
+  border-radius: 10px !important;
 }
 
 

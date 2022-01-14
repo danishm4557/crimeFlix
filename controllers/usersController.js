@@ -11,13 +11,12 @@ router.get('/', (req, res) => {
   res.render('../views/users/index.ejs')
 })
 
-router.get('/signin', (req, res) => {
-  res.render('../views/users/signin.ejs')
-})
-
 router.get('/register', (req, res) => {
   res.render('../views/users/register.ejs')
 })
+
+
+
 
 router.post('/register', (req, res) => {
   const salt = bcrypt.genSaltSync(10)
@@ -36,6 +35,11 @@ router.post('/register', (req, res) => {
 })
 
 
+
+
+router.get('/signin', (req, res) => {
+  res.render('../views/users/signin.ejs')
+})
 
 router.post('/signin', (req, res) => {
   User.findOne({username: req.body.username}, (err, foundUser) => {
