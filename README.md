@@ -1,7 +1,7 @@
 # CrimeFlix
 ##### _All the crime you can handle_
 
-##### Click [here](https://crimeflix.herokuapp.com/users) to visit CrimeFlix.
+##### Click [here](https://crimeflix.herokuapp.com/) to visit CrimeFlix.
 
 
 ##### If you don't want to make an account, that's okay! Please use the following when signing in:
